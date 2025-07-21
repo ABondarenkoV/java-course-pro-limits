@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: V1_schema_limits
+      author: BondarenkoA
+      comment: Создание таблицы limits
+      changes:
+        - sqlFile:
+            path: db/changelog/limits/V1_init_table_limits.sql
+
+  - changeSet:
+      id: V1_insert_limits
+      author: BondarenkoA
+      comment: Наполнение таблицы limits
+      changes:
+        - sqlFile:
+            path: db/changelog/limits/V1_insert_limits.sql
